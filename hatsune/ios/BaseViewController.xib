@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="图层2" translatesAutoresizingMaskIntoConstraints="NO" id="2tm-9h-n8I">
+                    <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                </imageView>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrO-Is-sx0">
+                    <rect key="frame" x="0.0" y="332.5" width="375" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="MMF-ui-n6K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNn-zX-ffY">
+                    <rect key="frame" x="315" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EIB-TD-jPx"/>
+                        <constraint firstAttribute="width" constant="50" id="mnM-bq-jQP"/>
+                    </constraints>
+                    <state key="normal" image="返回键"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2tm-9h-n8I" secondAttribute="trailing" id="1Jl-rD-Vsx"/>
+                <constraint firstItem="TrO-Is-sx0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2fh-9g-TDZ"/>
+                <constraint firstAttribute="trailing" secondItem="PNn-zX-ffY" secondAttribute="trailing" constant="10" id="AAw-mf-LOg"/>
+                <constraint firstItem="TrO-Is-sx0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HQf-YT-kcU"/>
+                <constraint firstItem="2tm-9h-n8I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JOC-tX-LAg"/>
+                <constraint firstAttribute="trailing" secondItem="TrO-Is-sx0" secondAttribute="trailing" id="OI0-h7-0zb"/>
+                <constraint firstAttribute="bottom" secondItem="2tm-9h-n8I" secondAttribute="bottom" id="Q1R-hk-tdJ"/>
+                <constraint firstItem="PNn-zX-ffY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="esw-90-jAU"/>
+                <constraint firstItem="TrO-Is-sx0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mmc-wo-aXg"/>
+                <constraint firstItem="2tm-9h-n8I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-20" id="qrV-YY-J93"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="图层2" width="375" height="667"/>
+        <image name="返回键" width="55" height="26"/>
+    </resources>
+</document>

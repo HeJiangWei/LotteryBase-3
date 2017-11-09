@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="选择公式界面" translatesAutoresizingMaskIntoConstraints="NO" id="z09-nk-I0V">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-B1-5co">
+                    <rect key="frame" x="0.0" y="283.5" width="375" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="LLZ-5D-QFD"/>
+                    </constraints>
+                    <state key="normal" title="  "/>
+                    <connections>
+                        <action selector="secondAction:" destination="-1" eventType="touchUpInside" id="RMv-nq-EwK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-uG-fKv">
+                    <rect key="frame" x="0.0" y="403.5" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="nw7-Mt-dAq"/>
+                    </constraints>
+                    <state key="normal" title=" "/>
+                    <connections>
+                        <action selector="thirdAction:" destination="-1" eventType="touchUpInside" id="xc6-lp-XN3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-zU-NSn">
+                    <rect key="frame" x="0.0" y="113.5" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="46s-ZC-rs9"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.16104479729999999" green="1" blue="0.9968137842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="firstAction:" destination="-1" eventType="touchUpInside" id="AgF-dR-JIH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z09-nk-I0V" secondAttribute="bottom" id="76N-7e-8zO"/>
+                <constraint firstItem="DNs-B1-5co" firstAttribute="top" secondItem="mFc-zU-NSn" secondAttribute="bottom" constant="20" id="EeN-PI-UaG"/>
+                <constraint firstAttribute="trailing" secondItem="z09-nk-I0V" secondAttribute="trailing" id="Ha8-gU-wUE"/>
+                <constraint firstItem="DNs-B1-5co" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QmZ-gX-uum"/>
+                <constraint firstItem="z09-nk-I0V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T1R-Fi-6gX"/>
+                <constraint firstItem="DNs-B1-5co" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TU2-J4-C4K"/>
+                <constraint firstItem="Yjf-uG-fKv" firstAttribute="top" secondItem="DNs-B1-5co" secondAttribute="bottom" constant="20" id="Vh1-kD-PrE"/>
+                <constraint firstItem="DNs-B1-5co" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W1i-Rz-QnV"/>
+                <constraint firstItem="z09-nk-I0V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bPx-mD-bsZ"/>
+                <constraint firstAttribute="trailing" secondItem="mFc-zU-NSn" secondAttribute="trailing" id="cQP-re-1Be"/>
+                <constraint firstAttribute="trailing" secondItem="Yjf-uG-fKv" secondAttribute="trailing" id="fXO-sS-Zmt"/>
+                <constraint firstItem="mFc-zU-NSn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rUs-o1-HfM"/>
+                <constraint firstAttribute="trailing" secondItem="DNs-B1-5co" secondAttribute="trailing" id="wOx-Eb-WVS"/>
+                <constraint firstItem="Yjf-uG-fKv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xVY-8G-qHh"/>
+            </constraints>
+            <point key="canvasLocation" x="281" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="选择公式界面" width="750" height="1334"/>
+    </resources>
+</document>

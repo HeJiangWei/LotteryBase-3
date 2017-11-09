@@ -1,0 +1,8 @@
+ext {
+    app = [
+            "applicationId"       : 'com.cp.kosun',
+            "CODE_PUSH_KEY"       : "i0sUazFNyPKnvxMprun2PEpX7imd4ksvOXqog",
+            'UMENG_APPKEY'        : '58cfd742677baa25be00209f',
+            'UMENG_MESSAGE_SECRET': '4f4fbb9a9514c79772ee1669819475eb'
+    ]
+}
